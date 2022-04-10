@@ -1,5 +1,14 @@
+body::before {
+	/* since navbar is fixed the content of the next section got cut off
+	   so we put some space before the body */
+	display: block;
+	content: '';
+	height: 60px;
+}
+
 @media(min-width: 768px) {
 	.news-input {
+		/* to make form control to enter email not too wide on big screens */
 		width: 50%;
 	}
 }
